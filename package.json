@@ -23,5 +23,9 @@
   "repository":   {
     "type": "git",
     "url": "git://github.com/michaelficarra/cscodegen.git"
+  },
+  "devDependencies": {
+    "coffee-script-redux": "git+https://github.com/michaelficarra/CoffeeScriptRedux.git#master",
+    "mocha": "*"
   }
 }

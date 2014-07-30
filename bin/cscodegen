@@ -1,0 +1,8 @@
+#!/usr/bin/env coffee
+CS = require 'coffee-script-redux'
+cscodegen = require '..'
+input = ''
+process.stdin.on 'data', (data) -> input += data
+process.stdin.on 'end', -> process.stdout.write(cscodegen.generate(CS.parse(input, {raw: true, optimise: false})))
+process.stdin.setEncoding 'utf8'
+process.stdin.resume()
